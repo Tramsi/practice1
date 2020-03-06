@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400i,700i&display=swap");
+
+// Variables
+$primary: #a6c1ee;
+$text: #373f51;
+$search: #c7c7c788;
+$searchHover: #c7c7c7;
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+@import "navbar.scss";
+
+.container {
+  height: 900px;
+  background: url(https://cdn.rawgit.com/ahmedhosna95/Elzero-Practice-07/b5ec32f4/images/bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  // background-attachment: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 90px;
+  text-align: right;
+  transform: translate(0, 350px);
+  color: $text;
+  p:nth-child(3) {
+    font-size: 45px;
+    font-weight: 400;
+  }
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 10%;
+  padding-bottom: 20px;
+}
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  color: $text;
+
+  div.part {
+    font-size: 21px;
+    text-align: start;
+    p:nth-child(2) {
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+}

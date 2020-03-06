@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400i,700i&display=swap");
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.253);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.253);
+  background-color: white;
+  z-index: 1000;
+  top: 0px;
+}
+
+nav ul.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0 10%;
+}
+
+nav ul.navbar li {
+  list-style: none;
+}
+
+nav ul.navbar li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 8px;
+  color: black;
+  font-size: 20px;
+}
+
+nav ul.navbar li a:not(#logo):not(#btn):hover {
+  text-decoration: underline;
+}
+
+nav ul.navbar li .active {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+nav ul.navbar li input {
+  width: 175px;
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 5px 15px;
+  border: 1px solid #c7c7c788;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 5px;
+}
+
+nav ul.navbar li input::-webkit-input-placeholder {
+  opacity: 1;
+  color: #c7c7c788;
+}
+
+nav ul.navbar li input:-ms-input-placeholder {
+  opacity: 1;
+  color: #c7c7c788;
+}
+
+nav ul.navbar li input::-ms-input-placeholder {
+  opacity: 1;
+  color: #c7c7c788;
+}
+
+nav ul.navbar li input::placeholder {
+  opacity: 1;
+  color: #c7c7c788;
+}
+
+nav ul.navbar li input:hover {
+  border: 1px solid #c7c7c7;
+  color: #c7c7c7;
+}
+
+nav ul.navbar li input:hover::-webkit-input-placeholder {
+  color: #c7c7c7;
+}
+
+nav ul.navbar li input:hover:-ms-input-placeholder {
+  color: #c7c7c7;
+}
+
+nav ul.navbar li input:hover::-ms-input-placeholder {
+  color: #c7c7c7;
+}
+
+nav ul.navbar li input:hover::placeholder {
+  color: #c7c7c7;
+}
+
+nav ul.navbar li input:focus {
+  border: 1px solid #c7c7c7;
+  color: #c7c7c7;
+}
+
+nav ul.navbar li input:focus::-webkit-input-placeholder {
+  color: #c7c7c7;
+}
+
+nav ul.navbar li input:focus:-ms-input-placeholder {
+  color: #c7c7c7;
+}
+
+nav ul.navbar li input:focus::-ms-input-placeholder {
+  color: #c7c7c7;
+}
+
+nav ul.navbar li input:focus::placeholder {
+  color: #c7c7c7;
+}
+
+nav ul.navbar .logo {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+nav ul.navbar .logo a {
+  font-size: 50px;
+  font-weight: 700;
+  color: #a6c1ee;
+  padding: 8px 10px;
+}
+
+nav ul.navbar li.btn a {
+  background-color: #a6c1ee;
+  padding: 2px 18px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 5px;
+  color: white;
+  border: 1px solid #a6c1ee;
+}
+
+nav ul.navbar li.btn a:hover {
+  background-color: white;
+  color: #a6c1ee;
+  border: 1px solid #a6c1ee;
+}
+
+nav ul.navbar li.searchBox {
+  position: relative;
+}
+
+nav .item {
+  margin: 0 5px;
+}
+
+.search.icon {
+  color: #000;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #c7c7c788;
+  border-radius: 100%;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.search.icon:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  height: 4px;
+  width: 1px;
+  background-color: #c7c7c788;
+}
+
+.icon {
+  right: 15px;
+  bottom: 9px;
+}
+
+.container {
+  height: 900px;
+  background: url(https://cdn.rawgit.com/ahmedhosna95/Elzero-Practice-07/b5ec32f4/images/bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.header {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 90px;
+  text-align: right;
+  -webkit-transform: translate(0, 350px);
+          transform: translate(0, 350px);
+  color: #373f51;
+}
+
+.header p:nth-child(3) {
+  font-size: 45px;
+  font-weight: 400;
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 10%;
+  padding-bottom: 20px;
+}
+
+.numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #373f51;
+}
+
+.numbers div.part {
+  font-size: 21px;
+  text-align: start;
+}
+
+.numbers div.part p:nth-child(2) {
+  font-size: 40px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */
